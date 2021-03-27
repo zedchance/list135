@@ -72,7 +72,7 @@ public final class List135<E>
     // Return element at index or throw IndexOutOfBoundsException
     public E get(int index)
     {
-        if (isEmpty() || index > size || index < 0)
+        if (isEmpty() || index >= size || index < 0)
         {
             throw new IndexOutOfBoundsException();
         }
